@@ -2,7 +2,7 @@ var str = process.argv.slice(2).toString().toLowerCase().split(",").join("");
 console.log(str);
 
 
-function getFrequency(str) {
+function countLetters(str) {
     var freq = {};
     for (var i=0; i<str.length;i++) {
         var character = str.charAt(i);
@@ -15,4 +15,4 @@ function getFrequency(str) {
 
     return freq;
 };
-console.log(getFrequency(str));
+console.log(countLetters(str));
